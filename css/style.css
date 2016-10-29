@@ -1,0 +1,21 @@
+body {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.714em;
+    text-transform: uppercase;
+    font-family: "PTSans" inherit;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+    
