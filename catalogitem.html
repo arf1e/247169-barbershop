@@ -9,10 +9,12 @@
         <header class="main-header">
             <div class="container">
                 <nav class="main-navigation">
-                    <a href="index.html">
-                        <img class="headerlogo" src="img/headerlogo.png" alt="Барбершоп Бородинский">
-                    </a>
                     <ul>
+                        <li>
+                          <a href="index.html">
+                            <img class="headerlogo" src="img/headerlogo.png" alt="Барбершоп Бородинский">
+                          </a>
+                        </li>
                         <li>
                             <a href="#">Информация</a>
                         </li>
@@ -36,7 +38,7 @@
             </div>
         </header>
         <!-- Название товара & Фотографии: -->
-        <main class="container">
+        <main class="container clearfix">
             <h1>Набор для путешествий «Baxter of California»</h1>
             <div class="breadcrumbs">
                 <a href="index.html">Главная</a>
@@ -44,9 +46,8 @@
                 <a href="#">Средства для ухода</a>
                 <span class="current">Набор для путешествий «Baxter of California»</span>
             </div>
-            <figure class="item-gallery-image">
-                <img class="item-gallery-current" src="img/item-gallery-photos/travelbaxter.jpg" alt="изображение товара" width="460" height="500">
-            </figure>
+            <div class="item-gallery">
+                <img class="item-gallery-current" src="img/item-gallery-photos/travelbaxter.jpg" alt="изображение товара" width="440" height="500">
             <div class="item-gallery-photos">
                 <a href="img/item-gallery-photos/travelbaxter2.jpg">
                     <img class="photos-preview" src="img/item-gallery-photos/travelbaxter2.jpg" alt="содержимое набора" width="140" height="150">
@@ -58,8 +59,9 @@
                     <img class="photos-preview" src="img/item-gallery-photos/travelbaxter.jpg" alt="изображение товара" width="140" height="150">
                 </a>
             </div>
+            </div>
             <!--Описание товара:-->
-            <div class="item-description-block">
+        <div class="item-description-block">
                 <div class="item-service-briefing">
                     <span class="availability">Есть в наличии</span>
                     <span class="vendor-code">Артикул: Dexter-ae</span>
@@ -91,7 +93,8 @@
             </div>
         </main>
         <footer class="main-footer">
-                <section class="footer-contacts">
+        <div class="container clearfix">
+        <section class="footer-contacts">
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
             <a href="#">Как нас найти?</a><br>
@@ -103,10 +106,11 @@
             <a class="social-btn btn-fb">FB</a>
             <a class="social-btn btn-instagram">Instagram</a>
         </section>
-        <section class="footer-copyright">
+        <section class="footer-copyright ">
             <p>Разработано:</p>
             <a class="btn" href="http://www.htmlacademy.ru">htmlacademy.ru</a>
         </section>
+        </div>
         </footer>
     </body>
 </html>
