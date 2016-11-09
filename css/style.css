@@ -37,7 +37,7 @@ h2 {
 }
 
 .container {
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
     min-height: 70px;
     padding: 0 10px;
@@ -53,6 +53,8 @@ h2 {
     width: 140px;
     margin-top: 20px;
     text-align: right;
+    margin-right: 0px;
+    margin-left: 10px;
 }
 
 .main-navigation li {
@@ -68,10 +70,26 @@ h1 {
     margin-bottom: 25px;
 }
 
-.item-gallery{
-    width: 480px;
+.item-gallery {
+    width: 460px;
     float: left;
-    margin-left: 0px;
+    margin-left: 10px;
+}
+
+.current-pic {
+    width: 460px;
+    height: 498px;
+}
+
+.item-pic{
+    float: left;
+    width: 140px;
+    height: 150px; 
+    margin-top: 20px;
+}
+
+.item-pic:not(:nth-child(3n)) {
+    margin-right: 20px;
 }
 
 .item-description-block {
@@ -83,15 +101,8 @@ h1 {
 
 .item-gallery-photos {
     min-width: 460px;
-    height: 150px;
     margin-left: 0px;
-    float: left;
     margin-bottom: 60px;
-}
-
-.item-gallery-photos a:nth-child(2) {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .availability {
@@ -165,12 +176,21 @@ h1 {
     width: 230px;
     height: 580px;
     margin-right: 20px;
-    padding-top: 0px;
+}
+
+form  li {
+    padding-bottom: 20px;
+    height: 20px;
+}
+
+.brand-filter { 
+    margin-bottom: 50px;
 }
 
 
 .catalog {
-    min-width: 740px;
+    float: right;
+    width: 700px;
     font-size: 0px; /* В артиклях буду использовать инлайн-блоки */
 }
 
@@ -180,12 +200,11 @@ h1 {
     height: 290px;
     vertical-align: top;
     font-size: 16px;
+    margin-top: 20px;
 }
 
-.catalog-item:nth-child(2),
-.catalog-item:nth-child(5) {
-    margin-left: 10px;
-    margin-right: 10px;
+.catalog-item:not(:nth-child(3n)) {
+    margin-right: 20px;
 }
 
 form ul {
@@ -196,16 +215,12 @@ form ul {
 
 
 
-.catalog-item:nth-child(4),
-.catalog-item:nth-child(5),
-.catalog-item:nth-child(6) {
+.catalog-item {
     margin-top: 20px;
 }
-
 .pageswitcher {
     width: 200px;
     height: 45px;
-    margin-left: 250px;
     margin-top: 45px;
     margin-bottom: 50px;
     font-size: 16px;
